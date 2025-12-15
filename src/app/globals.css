@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-inter: var(--font-inter);
+  --font-poppins: var(--font-poppins);
+  --font-open-sans: var(--font-open-sans);
+}
+
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), var(--font-poppins), sans-serif;
+}
+
+.buttonBorder{
+  background: linear-gradient(160deg, #7e7e7ea0 20%, rgb(34,34,34) 30%, rgb(34,34,34) 70%, #7e7e7ea0 80%);
+}
