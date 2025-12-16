@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
     qualities: [100, 75],
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
-    contentDispositionType: 'attachment',
+    contentDispositionType: 'inline',
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 };
