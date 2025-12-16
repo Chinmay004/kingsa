@@ -9,8 +9,8 @@ export default function Header() {
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const languages = [
-    { code: "en" as const, name: "English", flag: "🇬🇧" },
-    { code: "fr" as const, name: "Français", flag: "🇫🇷" },
+    { code: "en" as const, name: "English"},
+    { code: "fr" as const, name: "Français"},
   ];
 
   const currentLanguage = languages.find((lang) => lang.code === language) || languages[0];
@@ -57,7 +57,6 @@ export default function Header() {
               aria-label="Select language"
               aria-expanded={isDropdownOpen}
             >
-              <span className="text-sm sm:text-base">{currentLanguage.flag}</span>
               <p className="font-inter font-semibold text-xs sm:text-sm lg:text-base text-white tracking-wide whitespace-nowrap">
                 {currentLanguage.name}
               </p>
@@ -84,7 +83,6 @@ export default function Header() {
                       language === lang.code ? "bg-white/10" : ""
                     }`}
                   >
-                    <span className="text-base">{lang.flag}</span>
                     <span className="font-inter font-medium text-sm text-white">
                       {lang.name}
                     </span>
