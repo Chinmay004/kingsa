@@ -13,9 +13,9 @@ export default function Hero() {
   return (
     <section className="flex flex-col items-center justify-center w-full min-h-screen gap-4 sm:gap-6 relative overflow-hidden px-4">
       <Image 
-        src="/hero-bg.webp" 
+        src="/hero-bg.png" 
         alt="King Sa" 
-        width={1000} 
+        width={1000}
         height={1000} 
         className="absolute top-0 left-0 right-0 w-full h-full object-cover z-0" 
         priority

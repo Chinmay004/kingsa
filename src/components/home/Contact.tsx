@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Contact() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -12,6 +12,11 @@ export default function Contact() {
     subject: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -20,12 +25,69 @@ export default function Contact() {
       ...formData,
       [e.target.name]: e.target.value,
     });
+    // Clear status when user starts typing
+    if (submitStatus.type) {
+      setSubmitStatus({ type: null, message: "" });
+    }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: "" });
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "c7607a22-1a8c-4f69-ab69-a6f7f66238a9",
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitStatus({
+          type: "success",
+          message: language === "fr" 
+            ? "Message envoyé avec succès!" 
+            : "Message sent successfully!",
+        });
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        setSubmitStatus({
+          type: "error",
+          message: language === "fr"
+            ? "Erreur lors de l'envoi. Veuillez réessayer."
+            : "Error sending message. Please try again.",
+        });
+      }
+    } catch (error) {
+      setSubmitStatus({
+        type: "error",
+        message: language === "fr"
+          ? "Erreur lors de l'envoi. Veuillez réessayer."
+          : "Error sending message. Please try again.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -136,12 +198,27 @@ export default function Contact() {
         </div>
         <button
           type="submit"
-          className="bg-[#003e25] flex items-center justify-center px-4 lg:px-5 py-2.5 lg:py-3 rounded-3xl w-full sm:w-fit hover:opacity-90 transition-opacity"
+          disabled={isSubmitting}
+          className="bg-[#003e25] flex items-center justify-center px-4 lg:px-5 py-2.5 lg:py-3 rounded-3xl w-full sm:w-fit hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <p className="font-inter font-normal leading-normal text-sm lg:text-base text-white tracking-wide whitespace-nowrap">
-            {t("contact.sendMessage")}
+            {isSubmitting 
+              ? (language === "fr" ? "Envoi en cours..." : "Sending...")
+              : t("contact.sendMessage")
+            }
           </p>
         </button>
+        {submitStatus.type && (
+          <div
+            className={`w-full sm:w-fit px-4 py-3 rounded-lg ${
+              submitStatus.type === "success"
+                ? "bg-green-500/20 text-green-400 border border-green-500/30"
+                : "bg-red-500/20 text-red-400 border border-red-500/30"
+            }`}
+          >
+            <p className="font-inter text-sm">{submitStatus.message}</p>
+          </div>
+        )}
       </form>
     </section>
   );
