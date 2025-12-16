@@ -15,10 +15,13 @@ export default function Hero() {
       <Image 
         src="/hero-bg.png" 
         alt="King Sa" 
-        width={1000}
-        height={1000} 
+        width={1920}
+        height={1080} 
+        quality={100}
         className="absolute top-0 left-0 right-0 w-full h-full object-cover z-0" 
         priority
+        sizes="100vw"
+        unoptimized={true}
       />
       <h1 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-medium text-center z-10 w-full max-w-6xl">
         {t("hero.title")}
