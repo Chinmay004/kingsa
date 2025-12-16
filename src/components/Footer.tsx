@@ -1,4 +1,9 @@
+"use client";
+
+import { useLanguage } from "@/contexts/LanguageContext";
+
 export default function Footer() {
+  const { t } = useLanguage();
   const navigationColumns = [
     [
       {
@@ -78,7 +83,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-6 lg:gap-0 pt-6 sm:pt-8 lg:pt-0 px-4 sm:px-8 lg:px-[160px]">
           {/* Copyright */}
           <p className="font-inter font-medium leading-[1.6] text-sm sm:text-base text-white opacity-50 w-full sm:w-auto text-center sm:text-left">
-            ©2024 King Sa. All rights reserved
+            {t("footer.copyright")}
           </p>
 
           {/* Social Media Icons */}

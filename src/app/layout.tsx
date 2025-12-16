@@ -3,6 +3,8 @@ import { Poppins, Inter, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { LanguageProvider } from "@/contexts/LanguageContext";
+import LanguageSetter from "@/components/LanguageSetter";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -37,9 +39,12 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${inter.variable} ${openSans.variable} antialiased`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <LanguageProvider>
+          <LanguageSetter />
+          <Header />
+          {children}
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

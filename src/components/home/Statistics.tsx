@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface CountUpProps {
   end: number;
@@ -86,39 +87,40 @@ function CountUp({ end, suffix = "", prefix = "", duration = 2000, decimals = 0 
 }
 
 export default function Statistics() {
+  const { t } = useLanguage();
   return (
     <section className="flex flex-col gap-6 sm:gap-8 lg:gap-11 items-center lg:items-start w-full text-white px-4 sm:px-8 lg:px-24 py-12 sm:py-16 overflow-x-hidden">
       <div className="flex flex-col gap-2 sm:gap-1.5 items-center lg:items-start w-full">
         <h2 className="font-normal text-2xl sm:text-3xl lg:text-5xl leading-[1.33] text-white w-full text-center lg:text-left">
-          We have Strategic Investments across Africa
+          {t("statistics.title")}
         </h2>
         <p className="font-light text-sm sm:text-base lg:text-xl leading-[1.51] text-white w-full text-center lg:text-left">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in r
+          {t("statistics.description")}
         </p>
       </div>
       <div className="grid grid-cols-2 sm:flex sm:flex-row gap-4 sm:gap-6 lg:gap-14 items-center w-full max-w-[843px] sm:justify-center lg:justify-start">
         <div className="flex flex-col items-center text-center text-white w-full sm:flex-1 sm:min-w-[120px]">
           <CountUp end={30} suffix="+" />
           <p className="font-normal text-xs sm:text-sm lg:text-base leading-[1.33] w-full mt-1">
-            Years of Experience
+            {t("statistics.yearsOfExperience")}
           </p>
         </div>
         <div className="flex flex-col items-center text-center text-white w-full sm:flex-1 sm:min-w-[120px]">
           <CountUp end={12} suffix="+" />
           <p className="font-normal text-xs sm:text-sm lg:text-base leading-[1.33] w-full mt-1">
-            Sectors
+            {t("statistics.sectors")}
           </p>
         </div>
         <div className="flex flex-col items-center text-center text-white w-full sm:flex-1 sm:min-w-[120px]">
           <CountUp end={2} suffix="+" />
           <p className="font-normal text-xs sm:text-sm lg:text-base leading-[1.33] w-full mt-1">
-            Countries
+            {t("statistics.countries")}
           </p>
         </div>
         <div className="flex flex-col items-center text-center text-white w-full sm:flex-1 sm:min-w-[120px]">
           <CountUp end={10} prefix="$" suffix="Mn" />
           <p className="font-normal text-xs sm:text-sm lg:text-base leading-[1.33] w-full mt-1">
-            Value
+            {t("statistics.value")}
           </p>
         </div>
       </div>

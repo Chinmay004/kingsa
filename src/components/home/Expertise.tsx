@@ -1,16 +1,21 @@
+"use client";
+
+import { useLanguage } from "@/contexts/LanguageContext";
+
 export default function Expertise() {
+  const { t } = useLanguage();
   const expertiseFields = [
     {
-      title: "Infrastructure",
-      description: "Development of transformative, large-scale structural projects",
+      titleKey: "expertise.infrastructure.title",
+      descriptionKey: "expertise.infrastructure.description",
     },
     {
-      title: "Energy",
-      description: "Development of transformative, large-scale structural projects",
+      titleKey: "expertise.energy.title",
+      descriptionKey: "expertise.energy.description",
     },
     {
-      title: "Agro-Industry",
-      description: "Modernization and sustainable transformation of agriculture",
+      titleKey: "expertise.agroIndustry.title",
+      descriptionKey: "expertise.agroIndustry.description",
     },
   ];
 
@@ -20,12 +25,12 @@ export default function Expertise() {
         <h2 
           className="font-normal text-2xl sm:text-3xl lg:text-4xl leading-[1.33] text-white w-full text-center"
         >
-          Our Fields of Expertise
+          {t("expertise.title")}
         </h2>
         <p 
           className="font-light text-sm sm:text-base lg:text-xl leading-[1.51] text-white w-full text-center px-2"
         >
-          Exploring the Core Sectors That Drive Our Impact
+          {t("expertise.subtitle")}
         </p>
       </div>
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 lg:gap-8 items-stretch w-full">
@@ -38,12 +43,12 @@ export default function Expertise() {
               <h3 
                 className="font-normal text-xl sm:text-2xl lg:text-3xl text-white w-full text-center lg:text-left"
               >
-                {field.title}
+                {t(field.titleKey)}
               </h3>
               <p 
                 className="font-light text-[#f1f1f1] text-sm sm:text-base lg:text-xl w-full text-center lg:text-left"
               >
-                {field.description}
+                {t(field.descriptionKey)}
               </p>
             </div>
           </div>

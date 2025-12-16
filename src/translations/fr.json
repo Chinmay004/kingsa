@@ -1,0 +1,88 @@
+{
+  "header": {
+    "contactUs": "Contactez-nous"
+  },
+  "hero": {
+    "title": "Levier d'Émergence Économique en Afrique",
+    "subtitle": "Un investisseur stratégique dédié au développement panafricain",
+    "learnMore": "En savoir plus"
+  },
+  "statistics": {
+    "title": "Nous avons des investissements stratégiques à travers l'Afrique",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in r",
+    "yearsOfExperience": "Années d'expérience",
+    "sectors": "Secteurs",
+    "countries": "Pays",
+    "value": "Valeur"
+  },
+  "expertise": {
+    "title": "Nos Domaines d'Expertise",
+    "subtitle": "Explorer les secteurs clés qui alimentent notre impact",
+    "infrastructure": {
+      "title": "Infrastructure",
+      "description": "Développement de projets structurels transformateurs à grande échelle"
+    },
+    "energy": {
+      "title": "Énergie",
+      "description": "Développement de projets structurels transformateurs à grande échelle"
+    },
+    "agroIndustry": {
+      "title": "Agro-Industrie",
+      "description": "Modernisation et transformation durable de l'agriculture"
+    }
+  },
+  "subsidiaries": {
+    "title": "Nos Filiales Stratégiques",
+    "subtitle": "Renforcer le progrès grâce à un réseau diversifié d'entreprises spécialisées.",
+    "learnMore": "En savoir plus",
+    "kce": {
+      "name": "KCE",
+      "tagline": "Construction, Énergie et Mines",
+      "items": [
+        "Infrastructure- Développement d'infrastructures routières, de logements modernes et de bâtiments publics durables",
+        "Énergie- Solutions d'électrification innovantes pour les zones rurales et urbaines",
+        "Mines- Développement des ressources minérales (fer, ciment) pour renforcer une industrie nationale compétitive"
+      ]
+    },
+    "agritech": {
+      "name": "Agritech",
+      "tagline": "Innovation Agricole et Agro-Industrie",
+      "items": [
+        "Technologies Agricoles- Systèmes d'irrigation intelligents et drones de surveillance pour optimiser les rendements",
+        "Mécanisation- Location et vente d'équipements agricoles modernes adaptés aux conditions locales",
+        "Optimisation- Solutions de traçabilité numérique et plateformes en ligne connectant producteurs et acheteurs"
+      ]
+    },
+    "kaneServices": {
+      "name": "Kane Services",
+      "tagline": "Import-Export et Distribution",
+      "items": [
+        "Technologies Agricoles- Systèmes d'irrigation intelligents et drones de surveillance pour optimiser les rendements",
+        "Mécanisation- Location et vente d'équipements agricoles modernes adaptés aux conditions locales",
+        "Optimisation- Solutions de traçabilité numérique et plateformes en ligne connectant producteurs et acheteurs"
+      ]
+    }
+  },
+  "about": {
+    "title": "À propos de KING SA",
+    "description": "KING SA, une société d'investissement privée fondée en 2023 à Bamako, au Mali, incarne une vision panafricaine axée sur la souveraineté économique et le développement durable.",
+    "learnMore": "En savoir plus"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "name": "Nom",
+    "email": "Email",
+    "phoneNumber": "Numéro de téléphone",
+    "subject": "Sujet",
+    "message": "Message",
+    "namePlaceholder": "Rachel Joe",
+    "emailPlaceholder": "Rachel@domain.com",
+    "phonePlaceholder": "+971....",
+    "subjectPlaceholder": "Sujet",
+    "messagePlaceholder": "Entrez votre demande",
+    "sendMessage": "Envoyer mon message"
+  },
+  "footer": {
+    "copyright": "©2024 King Sa. Tous droits réservés"
+  }
+}

@@ -2,8 +2,10 @@
 
 import { useCallback } from "react";
 import Image from "next/image";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Hero() {
+  const { t } = useLanguage();
   const handleExploreClick = useCallback(() => {
     document.getElementById('')?.scrollIntoView({ behavior: 'smooth' });
   }, []);
@@ -18,11 +20,11 @@ export default function Hero() {
         className="absolute top-0 left-0 right-0 w-full h-full object-cover z-0" 
         priority
       />
-      <h1 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-medium text-center z-10 w-full max-w-4xl">
-        Lever of Economic Emergence in Africa
+      <h1 className="font-poppins text-3xl sm:text-4xl lg:text-5xl font-medium text-center z-10 w-full max-w-6xl">
+        {t("hero.title")}
       </h1>
-      <p className="font-inter text-lg sm:text-xl lg:text-2xl text-center font-light z-10 max-w-2xl">
-        A strategic investor dedicated to Pan-African development
+      <p className="font-inter text-lg sm:text-xl lg:text-2xl text-center font-light z-10 max-w-3xl">
+        {t("hero.subtitle")}
       </p>
       <button
         onClick={handleExploreClick}
@@ -32,7 +34,7 @@ export default function Hero() {
         <div className="absolute left-0 right-0 top-0 bottom-0 z-[1] rounded-3xl buttonBorder"></div>
         <div className="absolute left-[0.3px] right-[0.3px] top-[0.3px] bottom-[0.3px] z-[2] rounded-3xl m-[1.2px] bg-black"></div>
         <div className="absolute left-[0.3px] right-[0.3px] top-[0.3px] bottom-[0.3px] z-[3] rounded-3xl m-[1.2px] bg-[linear-gradient(99deg,rgba(85,85,85,0.40)_9.65%,rgba(66,66,66,0.40)_93.31%)] shadow-[0_16.455px_16.455px_0_rgba(0,0,0,0.25),250.932px_497.75px_156.318px_0_rgba(0,0,0,0.04),90.5px_176.886px_119.295px_0_rgba(0,0,0,0.10),8.227px_20.568px_49.364px_0_rgba(0,0,0,0.15)]"></div>
-        <p className="font-inter text-sm sm:text-base font-semibold text-white z-10 relative">Learn More</p>
+        <p className="font-inter text-sm sm:text-base font-semibold text-white z-10 relative">{t("hero.learnMore")}</p>
       </button>
     </section>
   );
