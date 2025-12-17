@@ -16,33 +16,33 @@ export default function Footer() {
               King Sa
             </h2>
             <p className="font-inter font-normal leading-[1.6] text-sm sm:text-base text-white opacity-70 text-center lg:text-left max-w-md">
-              The lever of economic emergence in Africa through strategic and sustainable investments.
+              {t("footer.description")}
             </p>
           </div>
 
           {/* Column 2 - Quick Links */}
           <div className="w-full lg:w-auto flex flex-col gap-4 items-center lg:items-start">
             <h3 className="font-inter font-bold leading-[1.5] text-sm sm:text-base text-white uppercase text-center lg:text-left">
-              QUICK LINKS
+              {t("footer.quickLinks")}
             </h3>
             <div className="flex flex-col gap-2 items-center lg:items-start">
               <a
-                href="#"
+                href="#about"
                 className="font-inter font-medium leading-[32px] sm:leading-[38px] text-sm sm:text-base text-white opacity-70 hover:opacity-100 transition-opacity text-center lg:text-left"
               >
-                About Us
+                {t("footer.aboutUs")}
               </a>
               <a
-                href="#"
+                href="#expertise"
                 className="font-inter font-medium leading-[32px] sm:leading-[38px] text-sm sm:text-base text-white opacity-70 hover:opacity-100 transition-opacity text-center lg:text-left"
               >
-                Services
+                {t("footer.expertise")}
               </a>
               <a
-                href="#"
+                href="#subsidiaries"
                 className="font-inter font-medium leading-[32px] sm:leading-[38px] text-sm sm:text-base text-white opacity-70 hover:opacity-100 transition-opacity text-center lg:text-left"
               >
-                News
+                {t("footer.subsidiaries")}
               </a>
             </div>
           </div>
@@ -50,17 +50,17 @@ export default function Footer() {
           {/* Column 3 - Contact Info */}
           <div className="w-full lg:w-auto flex flex-col gap-4 items-center lg:items-start">
             <h3 className="font-inter font-bold leading-[1.5] text-sm sm:text-base text-white uppercase text-center lg:text-left">
-              CONTACT
+              {t("footer.contact")}
             </h3>
             <div className="flex flex-col gap-2 items-center lg:items-start">
               <p className="font-inter font-medium leading-[32px] sm:leading-[38px] text-sm sm:text-base text-white opacity-70 text-center lg:text-left">
-                Address: Avenue Cheick Zayed ex Imacy Hamdalaye Bamako
+                {t("footer.address")}: Avenue Cheick Zayed ex Imacy Hamdalaye Bamako
               </p>
               <p className="font-inter font-medium leading-[32px] sm:leading-[38px] text-sm sm:text-base text-white opacity-70 text-center lg:text-left">
-                Email: contact@kingsamali.com
+                {t("footer.email")}: contact@kingsamali.com
               </p>
               <p className="font-inter font-medium leading-[32px] sm:leading-[38px] text-sm sm:text-base text-white opacity-70 text-center lg:text-left">
-                Phone: +223 76738880
+                {t("footer.phone")}: +223 76738880
               </p>
             </div>
           </div>
@@ -72,7 +72,7 @@ export default function Footer() {
         {/* Bottom Section - Copyright Only */}
         <div className="flex justify-start items-center px-4 sm:px-8 lg:px-[160px]">
           <p className="font-inter font-medium leading-[1.6] text-sm sm:text-base text-white opacity-50 text-center lg:text-left">
-            © 2025 — Copyright
+            © {new Date().getFullYear()} King Sa. {t("footer.allRightsReserved")}
           </p>
         </div>
       </div>

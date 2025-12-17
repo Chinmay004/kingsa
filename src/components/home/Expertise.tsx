@@ -20,7 +20,7 @@ export default function Expertise() {
   ];
 
   return (
-    <section className="flex flex-col gap-6 sm:gap-8 lg:gap-12 items-center w-full text-white px-4 sm:px-8 lg:px-24 py-12 sm:py-16 overflow-x-hidden">
+    <section id="expertise" className="flex flex-col gap-6 sm:gap-8 lg:gap-12 items-center w-full text-white px-4 sm:px-8 lg:px-24 py-12 sm:py-16 overflow-x-hidden">
       <div className="flex flex-col gap-2 sm:gap-1.5 items-center w-full max-w-full">
         <h2 
           className="font-normal text-2xl sm:text-3xl lg:text-4xl leading-[1.33] text-white w-full text-center"

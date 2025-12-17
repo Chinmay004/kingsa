@@ -83,6 +83,15 @@
     "sendMessage": "Send my message"
   },
   "footer": {
-    "copyright": "©2024 King Sa. All rights reserved"
+    "description": "The lever of economic emergence in Africa through strategic and sustainable investments.",
+    "quickLinks": "Quick Links",
+    "aboutUs": "About Us",
+    "expertise": "Expertise",
+    "subsidiaries": "Subsidiaries",
+    "contact": "Contact",
+    "address": "Address",
+    "email": "Email",
+    "phone": "Phone",
+    "allRightsReserved": "All rights reserved."
   }
 }
