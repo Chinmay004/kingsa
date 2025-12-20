@@ -94,9 +94,9 @@ export default function Statistics() {
         <h2 className="font-normal text-2xl sm:text-3xl lg:text-5xl leading-[1.33] text-white w-full text-center lg:text-left">
           {t("statistics.title")}
         </h2>
-        <p className="font-light text-sm sm:text-base lg:text-xl leading-[1.51] text-white w-full text-center lg:text-left">
+        {/* <p className="font-light text-sm sm:text-base lg:text-xl leading-[1.51] text-white w-full text-center lg:text-left">
           {t("statistics.description")}
-        </p>
+        </p> */}
       </div>
       <div className="grid grid-cols-2 sm:flex sm:flex-row gap-4 sm:gap-6 lg:gap-14 items-center w-full max-w-[843px] sm:justify-center lg:justify-start">
         <div className="flex flex-col items-center text-center text-white w-full sm:flex-1 sm:min-w-[120px]">
