@@ -6,7 +6,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 export default function About() {
   const { t } = useLanguage();
   return (
-    <section className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-9 justify-between items-center lg:items-start w-full px-4 sm:px-8 lg:px-24 py-12 sm:py-16 overflow-x-hidden">
+    <section id="about" className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-9 justify-between items-center lg:items-start w-full px-4 sm:px-8 lg:px-24 py-12 sm:py-16 overflow-x-hidden">
       {/* Heading - First on mobile, part of left column on desktop */}
       <h2 className="font-open-sans font-normal leading-[1.33] text-2xl sm:text-3xl lg:text-4xl text-white w-full text-center lg:text-left order-1 lg:order-0 lg:hidden">
         {t("about.title")}

@@ -3,23 +3,23 @@
     "contactUs": "Contactez-nous"
   },
   "hero": {
-    "title": "Levier d'Émergence Économique en Afrique",
+    "title": "Levier de l’émergence économique en Afrique",
     "subtitle": "Un investisseur stratégique dédié au développement panafricain",
     "learnMore": "En savoir plus"
   },
   "statistics": {
-    "title": "Nous avons des investissements stratégiques à travers l'Afrique",
+    "title": "Nous avons des investissements stratégiques à travers l’Afrique",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in r",
-    "yearsOfExperience": "Années d'expérience",
+    "yearsOfExperience": "Années d’expérience",
     "sectors": "Secteurs",
     "countries": "Pays",
     "value": "Valeur"
   },
   "expertise": {
-    "title": "Nos Domaines d'Expertise",
-    "subtitle": "Explorer les secteurs clés qui alimentent notre impact",
+    "title": "Nos domaines d’expertise",
+    "subtitle": "Explorer les secteurs clés qui stimulent notre impact",
     "infrastructure": {
-      "title": "Infrastructure",
+      "title": "Infrastructures",
       "description": "Développement de projets structurels transformateurs à grande échelle"
     },
     "energy": {
@@ -27,39 +27,39 @@
       "description": "Développement de projets structurels transformateurs à grande échelle"
     },
     "agroIndustry": {
-      "title": "Agro-Industrie",
-      "description": "Modernisation et transformation durable de l'agriculture"
+      "title": "Agro-industrie",
+      "description": "Modernisation et transformation durable de l’agriculture"
     }
   },
   "subsidiaries": {
-    "title": "Nos Filiales Stratégiques",
-    "subtitle": "Renforcer le progrès grâce à un réseau diversifié d'entreprises spécialisées.",
+    "title": "Nos filiales stratégiques",
+    "subtitle": "Favoriser le progrès grâce à un réseau diversifié d’entreprises spécialisées.",
     "learnMore": "En savoir plus",
     "kce": {
       "name": "KCE",
       "tagline": "Construction, Énergie et Mines",
       "items": [
-        "Infrastructure- Développement d'infrastructures routières, de logements modernes et de bâtiments publics durables",
-        "Énergie- Solutions d'électrification innovantes pour les zones rurales et urbaines",
-        "Mines- Développement des ressources minérales (fer, ciment) pour renforcer une industrie nationale compétitive"
+        "Infrastructures - Développement d’infrastructures routières, de logements modernes et de bâtiments publics durables",
+        "Énergie - Solutions innovantes d’électrification pour les zones rurales et urbaines",
+        "Mines - Développement des ressources minérales (fer, ciment) pour renforcer une industrie nationale compétitive"
       ]
     },
     "agritech": {
       "name": "Agritech",
-      "tagline": "Innovation Agricole et Agro-Industrie",
+      "tagline": "Innovation agricole et agro-industrie",
       "items": [
-        "Technologies Agricoles- Systèmes d'irrigation intelligents et drones de surveillance pour optimiser les rendements",
-        "Mécanisation- Location et vente d'équipements agricoles modernes adaptés aux conditions locales",
-        "Optimisation- Solutions de traçabilité numérique et plateformes en ligne connectant producteurs et acheteurs"
+        "Technologies agricoles - Systèmes d’irrigation intelligents et drones de surveillance pour optimiser les rendements",
+        "Mécanisation - Location et vente d’équipements agricoles modernes adaptés aux conditions locales",
+        "Optimisation - Solutions de traçabilité numérique et plateformes en ligne reliant producteurs et acheteurs"
       ]
     },
     "kaneServices": {
       "name": "Kane Services",
-      "tagline": "Import-Export et Distribution",
+      "tagline": "Import–Export et distribution",
       "items": [
-        "Technologies Agricoles- Systèmes d'irrigation intelligents et drones de surveillance pour optimiser les rendements",
-        "Mécanisation- Location et vente d'équipements agricoles modernes adaptés aux conditions locales",
-        "Optimisation- Solutions de traçabilité numérique et plateformes en ligne connectant producteurs et acheteurs"
+        "Technologies agricoles - Systèmes d’irrigation intelligents et drones de surveillance pour optimiser les rendements",
+        "Mécanisation - Location et vente d’équipements agricoles modernes adaptés aux conditions locales",
+        "Optimisation - Solutions de traçabilité numérique et plateformes en ligne reliant producteurs et acheteurs"
       ]
     }
   },
@@ -69,20 +69,29 @@
     "learnMore": "En savoir plus"
   },
   "contact": {
-    "title": "Contactez-nous",
+    "title": "Entrer en contact",
     "name": "Nom",
-    "email": "Email",
+    "email": "E-mail",
     "phoneNumber": "Numéro de téléphone",
-    "subject": "Sujet",
+    "subject": "Objet",
     "message": "Message",
     "namePlaceholder": "Rachel Joe",
-    "emailPlaceholder": "Rachel@domain.com",
+    "emailPlaceholder": "Rachel@domaine.com",
     "phonePlaceholder": "+971....",
-    "subjectPlaceholder": "Sujet",
+    "subjectPlaceholder": "Objet",
     "messagePlaceholder": "Entrez votre demande",
     "sendMessage": "Envoyer mon message"
   },
   "footer": {
-    "copyright": "©2024 King Sa. Tous droits réservés"
+    "description": "Le levier de l'émergence économique en Afrique grâce à des investissements stratégiques et durables.",
+    "quickLinks": "Liens rapides",
+    "aboutUs": "À propos",
+    "expertise": "Expertise",
+    "subsidiaries": "Filiales",
+    "contact": "Contact",
+    "address": "Adresse",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "allRightsReserved": "Tous droits réservés."
   }
 }
